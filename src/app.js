@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Can i help you?',
         name: 'Santiago Barrios Grijalba',
-        helperText: 'I hope that my skills will be enough'
+        helperText: 'I hope that my skills can help you.'
     });
 });
 
