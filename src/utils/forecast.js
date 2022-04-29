@@ -11,9 +11,7 @@ const forecast = (latitude, longitude, callback) => {
         else if (body.success === false) {
             callback(body.error.info, undefined);
         } else {
-            const resp = `${body.current.weather_descriptions[0]}. 
-                            It's currently ${body.current.temperature} degress out. There is a  
-                            ${body.current.precip}% change of rain and humidity value for ${body.current.humidity}%`
+            const resp = `${body.current.weather_descriptions[0]}. It's currently ${body.current.temperature} degress out. There is a ${body.current.precip}% change of rain and humidity value for ${body.current.humidity}%`
             callback(undefined, resp)
         }
     })
